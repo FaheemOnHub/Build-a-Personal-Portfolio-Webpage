@@ -1,0 +1,215 @@
+html,body {
+    height:100%;
+    width:100%;
+    box-sizing:border-box;
+  }
+  .navbar {
+    background-color:#be3144;
+    display:flex;
+    justify-content:flex-end;
+    position:fixed;
+    width:100%;
+    top:0%;
+  }
+  .nav-list {
+    display:flex;
+    margin-right:2rem;
+    justify-content:space-between;
+    gap:2rem;
+    font-weight:bold;
+    font-size:20px;
+    color:white;
+  }
+  ul{
+    list-style:none;
+  }
+  
+  a{
+      text-decoration: none;
+  }
+  
+  .welcome-section {
+    background-color:#000;
+    color:white;
+    height:100vh;
+    margin-top:3rem;
+  }
+  .span-text {
+    color:#be3144;
+    font-size: 3rem;
+      font-weight: 200;
+      font-style: italic;
+  }
+  .welcome-text {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-size:55px;
+    position:relative;
+    top:10rem;
+  }
+  
+  .projects {
+    display:flex;
+    background-color:#45567d;
+    margin-top:-2rem;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  
+  }
+  .projects-text {
+    text-decoration: underline;
+    text-decoration-color:white;
+  }
+  .project-grid-inside {
+    display:flex;
+    flex-direction:row;
+    gap:2rem;
+  }
+  .project-image {
+    height: 30vh;
+      width: 100%;
+      object-fit: cover;
+  }
+  .project-title {
+    font-size: 1rem;
+      padding: 1rem 0.1rem;
+      background-color:#303841;
+      margin-top:-0.5rem;
+      display:flex;
+      justify-content:center;
+      color:white;
+      
+  }
+    .btn {
+      margin-top:3vw;
+      padding:1vw 3vw;
+      font-size:16px;
+      background-color:#303841;
+      cursor:pointer;
+      color:white;
+      margin-bottom:1rem;
+    }
+    .btn:hover {
+       background-color: #be3144;
+      transform: scale(1.09);
+      transition: transform 0.3s ease-out;
+    }
+    .work-together {
+      background-color:#303841;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+    }
+    .span-work-text {
+      font-style: italic;
+      font-size:20px;
+      color:white;
+    }
+    .work-text {
+       display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-size:55px;
+    color:white;
+    }
+    .social-links {
+      margin-top:1rem;
+      margin-bottom:1rem;
+    }
+    .social-links:hover {
+      text-shadow: 2px 2px 1px #1f1f1f;
+       transform: translateY(2px);
+      transition: transform 0.3s ease-out;
+    }
+  
+    a{
+      text-decoration:none;
+    }
+    .footer {
+      display:flex;
+      justify-content:center;
+      gap:15rem;
+      border-top:5px solid #be3144;
+      background-color:#303841;
+      color:white;
+      padding:1rem;
+    }
+  
+    .white-link:before {
+    content: '<';
+    color:orange;
+    position: absolute;
+    left: -13px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .white-link:after {
+    content: ' / >';
+     color:orange;
+    position: absolute;
+    right: -20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .white-link:hover {
+      transform: scale(1.05);
+  }
+  
+  .white-link:hover:before,
+  .white-link:hover:after {
+    opacity: 1;
+  }
+  
+  @media (max-width:370px)
+  {
+    .projects {
+    display:flex;
+    background-color:#45567d;
+    margin-top:-2rem;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+  }
+  
+  .project-grid-inside {
+    display:flex;
+    flex-direction:column;
+    gap:0.2rem;
+  }
+    
+  .navbar {
+    background-color:#be3144;
+    display:flex;
+    justify-content:space-around;
+    position:fixed;
+    width:100%;
+    top:0%;
+  }
+  
+  .nav-list {
+    display:flex;
+    margin-right:2rem;
+    justify-content:initial;
+    gap:0.3rem;
+    font-weight:bold;
+    font-size:6vw;
+    color:white;
+  }
+  .footer {
+      display:flex;
+      flex-direction:column;
+      justify-content:space-around;
+      gap:1rem;
+      border-top:5px solid #be3144;
+      background-color:#303841;
+      color:white;
+      padding:1rem;
+    }
+  }
